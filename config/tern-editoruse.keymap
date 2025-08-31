@@ -42,25 +42,25 @@
         combo_q {
             timeout-ms = <50>;
             key-positions = <0 1>;
-            bindings = <&kp Q>;
+            bindings = <&kp SQT>;
         };
 
         combo_p {
             timeout-ms = <50>;
             key-positions = <6 7>;
-            bindings = <&kp P>;
+            bindings = <&kp L>;
         };
 
         combo_b {
             timeout-ms = <50>;
-            key-positions = <21 22>;
-            bindings = <&kp B>;
+            key-positions = <21 12>;
+            bindings = <&kp X>;
         };
 
         combo_y {
             timeout-ms = <50>;
-            key-positions = <23 24>;
-            bindings = <&kp Y>;
+            key-positions = <13 22>;
+            bindings = <&kp B>;
         };
     };
 
