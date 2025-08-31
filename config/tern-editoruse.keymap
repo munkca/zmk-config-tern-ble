@@ -109,6 +109,18 @@
             key-positions = <23 24>;
             layers = <1 2>;
         };
+
+        combo_lparen {
+            bindings = <&kp LPAR>;
+            key-positions = <20 21>;
+            layers = <1 2>;
+        };
+
+        combo_rparen {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <22 23>;
+            layers = <1 2>;
+        };
     };
 
     keymap {
