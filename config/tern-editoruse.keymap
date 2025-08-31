@@ -35,7 +35,7 @@
 
         combo_sys_l {
             key-positions = <27 28>;
-            bindings = <&mo SYS_L>;
+            bindings = <&mo 0>;
             require-prior-idle-ms = <200>;
         };
 
@@ -71,16 +71,43 @@
         combo_bspc {
             bindings = <&kp BSPC>;
             key-positions = <22 23>;
+            layers = <0>;
         };
 
         combo_del {
             bindings = <&kp DELETE>;
             key-positions = <23 24>;
+            layers = <0>;
         };
 
         combo_caps {
             bindings = <&kp CAPSLOCK>;
             key-positions = <19 20>;
+            layers = <0>;
+        };
+
+        combo_lbrc {
+            bindings = <&kp LBRC>;
+            key-positions = <18 19>;
+            layers = <1 2>;
+        };
+
+        combo_rbrc {
+            bindings = <&kp RBRC>;
+            key-positions = <25 24>;
+            layers = <1 2>;
+        };
+
+        combo_lbrack {
+            bindings = <&kp LBKT>;
+            key-positions = <19 20>;
+            layers = <1 2>;
+        };
+
+        combo_rbrack {
+            bindings = <&kp RBKT>;
+            key-positions = <23 24>;
+            layers = <1 2>;
         };
     };
 
@@ -92,27 +119,17 @@
                  &kp COMMA   &kp PERIOD        &kp P         &kp Y      &kp F        &kp G        &kp C        &kp R
   &hm LGUI A     &hm LALT O  &hm LEFT_SHIFT E  &hm LCTRL U   &kp I      &kp D        &hm RCTRL H  &hm RSHFT T  &hm LALT N  &hm RGUI S
   &kp SEMICOLON  &kp Q       &kp J             &kp K                                 &kp M        &kp W        &kp V       &kp Z
-                                               &lt 4 DELETE  &kp TAB    &lt 3 ENTER  &lt 2 SPACE
-            >;
-        };
-
-        nav_layer {
-            display-name = "Nav";
-            bindings = <
-          &trans  &trans  &trans  &trans    &trans   &kp HOME  &kp UARW  &kp PG_UP
-  &trans  &trans  &trans  &trans  &trans    &trans   &kp LARW  &kp DARW  &kp RARW   &trans
-  &trans  &trans  &trans  &trans                     &kp END   &trans    &kp PG_DN  &trans
-                          &trans  &trans    &kp ESC  &kp DEL
+                                               &lt 0 DELETE  &kp TAB    &lt 5 ENTER  &lt 1 SPACE
             >;
         };
 
         num_layer {
             display-name = "Num";
             bindings = <
-            &kp N7  &kp N8  &kp N9  &kp RBKT     &trans  &trans  &trans  &trans
-  &kp SEMI  &kp N4  &kp N5  &kp N6  &kp EQUAL    &trans  &trans  &trans  &trans  &trans
-  &kp LBKT  &kp N1  &kp N2  &kp N3                       &trans  &trans  &trans  &trans
-                            &kp N0  &kp MINUS    &trans  &trans
+             &kp N7  &kp N8  &kp N9  &kp PLUS     &kp ASTERISK  &trans     &trans     &trans
+  &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp MINUS    &kp SLASH     &kp RCTRL  &kp RSHFT  &kp LEFT_ALT  &kp LGUI
+  &kp N0     &kp N1  &kp N2  &kp N3                             &trans     &trans     &trans        &trans
+                             &trans  &trans       &trans        &trans
             >;
         };
 
@@ -123,6 +140,16 @@
   &kp COLON  &kp LS(N4)  &kp LS(N5)  &kp LS(N6)  &kp PLUS     &trans  &trans  &trans  &trans  &trans
   &kp LBRC   &kp LS(N1)  &kp LS(N2)  &kp LS(N3)                       &trans  &trans  &trans  &trans
                                      &kp LS(N0)  &kp UNDER    &trans  &trans
+            >;
+        };
+
+        nav_layer {
+            display-name = "Nav";
+            bindings = <
+          &trans  &trans  &trans  &trans    &trans   &kp HOME  &kp UARW  &kp PG_UP
+  &trans  &trans  &trans  &trans  &trans    &trans   &kp LARW  &kp DARW  &kp RARW   &trans
+  &trans  &trans  &trans  &trans                     &kp END   &trans    &kp PG_DN  &trans
+                          &trans  &trans    &kp ESC  &kp DEL
             >;
         };
 
