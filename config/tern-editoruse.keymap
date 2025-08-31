@@ -67,6 +67,21 @@
             bindings = <&kp ESCAPE>;
             key-positions = <2 1>;
         };
+
+        combo_bspc {
+            bindings = <&kp BSPC>;
+            key-positions = <22 23>;
+        };
+
+        combo_del {
+            bindings = <&kp DELETE>;
+            key-positions = <23 24>;
+        };
+
+        combo_caps {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <19 20>;
+        };
     };
 
     keymap {
