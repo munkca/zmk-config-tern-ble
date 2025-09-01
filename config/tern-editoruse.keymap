@@ -131,7 +131,7 @@
                  &kp COMMA   &kp PERIOD        &kp P         &kp Y      &kp F        &kp G        &kp C        &kp R
   &hm LGUI A     &hm LALT O  &hm LEFT_SHIFT E  &hm LCTRL U   &kp I      &kp D        &hm RCTRL H  &hm RSHFT T  &hm LALT N  &hm RGUI S
   &kp SEMICOLON  &kp Q       &kp J             &kp K                                 &kp M        &kp W        &kp V       &kp Z
-                                               &lt 0 DELETE  &kp TAB    &lt 5 ENTER  &lt 1 SPACE
+                                               &lt 3 DELETE  &kp TAB    &lt 2 ENTER  &lt 1 SPACE
             >;
         };
 
