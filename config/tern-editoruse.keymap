@@ -125,10 +125,10 @@
 
         default_layer {
             bindings = <
-                 &kp COMMA  &kp PERIOD  &kp P         &kp Y    &kp F  &kp G      &kp C  &kp R
-  &kp A          &kp O      &kp E       &kp U         &kp I    &kp D  &kp H      &kp T  &kp N  &kp S
-  &kp SEMICOLON  &kp Q      &kp J       &kp K                         &kp M      &kp W  &kp V  &kp Z
-                                        &lt 3 DELETE  &mo 2    &mo 1  &kp SPACE
+                 &kp COMMA  &kp PERIOD  &kp P       &kp Y    &kp F  &kp G      &kp C  &kp R
+  &kp A          &kp O      &kp E       &kp U       &kp I    &kp D  &kp H      &kp T  &kp N  &kp S
+  &kp SEMICOLON  &kp Q      &kp J       &kp K                       &kp M      &kp W  &kp V  &kp Z
+                                        &lt 3 BSPC  &mo 2    &mo 1  &kp SPACE
             >;
         };
 
@@ -165,10 +165,10 @@
         sys_layer {
             display-name = "Sys";
             bindings = <
-              &bootloader   &trans        &trans        &out OUT_USB    &msc SCRL_UP    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT
-  &trans      &trans        &trans        &trans        &out OUT_BLE    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
-  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2                                  &mkp LCLK       &mkp MCLK       &mkp RCLK        &trans
-                                          &trans        &trans          &trans          &trans
+              &bootloader   &kp C_BRI_DN  &kp C_BRI_UP  &out OUT_USB    &trans  &trans  &mmv MOVE_UP  &trans
+  &trans      &kp C_MUTE    &kp C_VOL_DN  &kp C_VOL_UP  &out OUT_BLE    &trans  &trans  &trans        &trans  &trans
+  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2                          &trans  &trans        &trans  &trans
+                                          &trans        &trans          &trans  &trans
             >;
         };
     };
