@@ -145,8 +145,8 @@
         sym_layer {
             display-name = "Sym";
             bindings = <
-            &trans    &trans      &trans     &trans    &kp SLASH  &kp BACKSLASH  &kp LT     &kp GT
-  &sk LGUI  &sk LALT  &sk LSHIFT  &sk LCTRL  &trans    &kp PIPE   &kp TILDE      &kp PRCNT  &kp CARET  &kp AMPS
+            &trans    &trans      &trans     &trans    &kp PIPE   &kp BACKSLASH  &kp LT     &kp GT
+  &sk LGUI  &sk LALT  &sk LSHIFT  &sk LCTRL  &trans    &kp SLASH  &kp TILDE      &kp PRCNT  &kp CARET  &kp AMPS
   &trans    &trans    &trans      &trans                          &kp GRAVE      &kp AT     &kp HASH   &kp DLLR
                                   &trans     &trans    &trans     &trans
             >;
