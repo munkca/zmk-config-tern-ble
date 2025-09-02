@@ -143,10 +143,10 @@
         sym_layer {
             display-name = "Sym";
             bindings = <
-             &kp LT       &kp GT     &kp SLASH   &kp BSLH    &trans  &trans  &mmv MOVE_UP  &trans
-  &kp TILDE  &kp PERCENT  &kp CARET  &kp AMPS    &kp PIPE    &trans  &trans  &trans        &trans  &trans
-  &kp GRAVE  &kp AT_SIGN  &kp HASH   &kp DOLLAR                      &trans  &trans        &trans  &trans
-                                     &trans      &trans      &trans  &trans
+             &kp LT       &kp GT     &kp SLASH   &kp BSLH    &msc SCRL_UP    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT
+  &kp TILDE  &kp PERCENT  &kp CARET  &kp AMPS    &kp PIPE    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
+  &kp GRAVE  &kp AT_SIGN  &kp HASH   &kp DOLLAR                              &mkp LCLK       &mkp MCLK       &mkp RCLK        &trans
+                                     &trans      &trans      &trans          &trans
             >;
         };
 
