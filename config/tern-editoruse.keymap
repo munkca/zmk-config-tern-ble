@@ -145,10 +145,10 @@
         sym_layer {
             display-name = "Sym";
             bindings = <
-             &kp LT       &kp GT     &kp SLASH   &kp BSLH    &msc SCRL_UP    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT
-  &kp TILDE  &kp PERCENT  &kp CARET  &kp AMPS    &kp PIPE    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
-  &kp GRAVE  &kp AT_SIGN  &kp HASH   &kp DOLLAR                              &mkp LCLK       &mkp MCLK       &mkp RCLK        &trans
-                                     &trans      &trans      &trans          &trans
+            &trans    &trans      &trans     &trans    &kp SLASH  &kp BACKSLASH  &kp LT     &kp GT
+  &sk LGUI  &sk LALT  &sk LSHIFT  &sk LCTRL  &trans    &kp PIPE   &kp TILDE      &kp PRCNT  &kp CARET  &kp AMPS
+  &trans    &trans    &trans      &trans                          &kp GRAVE      &kp AT     &kp HASH   &kp DLLR
+                                  &trans     &trans    &trans     &trans
             >;
         };
 
@@ -165,10 +165,10 @@
         sys_layer {
             display-name = "Sys";
             bindings = <
-              &bootloader   &trans        &trans        &out OUT_USB    &trans  &trans  &trans  &trans
-  &trans      &trans        &trans        &trans        &out OUT_BLE    &trans  &trans  &trans  &trans  &trans
-  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2                          &trans  &trans  &trans  &trans
-                                          &trans        &trans          &trans  &trans
+              &bootloader   &trans        &trans        &out OUT_USB    &msc SCRL_UP    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT
+  &trans      &trans        &trans        &trans        &out OUT_BLE    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
+  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2                                  &mkp LCLK       &mkp MCLK       &mkp RCLK        &trans
+                                          &trans        &trans          &trans          &trans
             >;
         };
     };
