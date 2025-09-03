@@ -165,9 +165,9 @@
         sys_layer {
             display-name = "Sys";
             bindings = <
-              &bootloader   &kp C_BRI_DN  &kp C_BRI_UP  &out OUT_USB    &trans  &trans  &mmv MOVE_UP  &trans
-  &trans      &kp C_MUTE    &kp C_VOL_DN  &kp C_VOL_UP  &out OUT_BLE    &trans  &trans  &trans        &trans  &trans
-  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2                          &trans  &trans        &trans  &trans
+              &bootloader   &kp C_BRI_DN  &kp C_BRI_UP  &out OUT_USB    &trans  &trans          &mmv MOVE_UP    &trans
+  &trans      &kp C_MUTE    &kp C_VOL_DN  &kp C_VOL_UP  &out OUT_BLE    &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
+  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2                          &trans          &trans          &trans           &trans
                                           &trans        &trans          &trans  &trans
             >;
         };
