@@ -29,6 +29,60 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
+        skq: sticky_key_quick_release {
+            compatible = "zmk,behavior-sticky-key";
+            #binding-cells = <1>;
+            bindings = <&kp>;
+            release-after-ms = <1000>;
+            quick-release;
+            ignore-modifiers;
+        };
+        sticky_tap_layer: sticky_tap_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "STICKY_TAP_LAYER";
+            bindings = <&mo>, <&skq>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <(-1)>;
+        };
+        swapm: swapm {
+            compatible = "zmk,behavior-tri-state";
+            label = "SWAPM";
+            #binding-cells = <0>;
+            bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
+
+            ignored-key-positions = <10>;
+        };
+
+        swapl: swapl {
+            compatible = "zmk,behavior-tri-state";
+            label = "SWAPL";
+            #binding-cells = <0>;
+            bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+
+            ignored-key-positions = <10>;
+        };
+
+        swapm2: swapm2 {
+            compatible = "zmk,behavior-tri-state";
+            label = "SWAPM2";
+            #binding-cells = <0>;
+            bindings = <&kt LGUI>, <&kp GRAVE>, <&kt LGUI>;
+
+            ignored-key-positions = <10>;
+        };
+
+        swapl2: swapl2 {
+            compatible = "zmk,behavior-tri-state";
+            label = "SWAPL2";
+            #binding-cells = <0>;
+            bindings = <&kt LALT>, <&kp GRAVE>, <&kt LALT>;
+
+            ignored-key-positions = <10>;
+        };
     };
 
     combos {
