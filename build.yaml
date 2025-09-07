@@ -7,4 +7,3 @@
 #
 board: [ "seeeduino_xiao_ble" ]
 shield: [ "tern" ]
----
